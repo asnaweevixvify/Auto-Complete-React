@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+input{
+  margin-top: 60px;
+  width: 450px;
+  height: 50px;
+  font-family: 'Kanit';
+  font-size: 20px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.list-container{
+  display: flex;
+  flex-wrap: wrap ;
+  gap: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  margin-top: 90px;
+}
+h3{
+  font-family: 'Kanit';
+  font-size: 20px;
+  font-weight: 400;
+}
+.list{
+  flex: 0 0 20%;
+}
+img{
+  width: 300px;
+  height: 180px;
+}
