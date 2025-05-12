@@ -23,9 +23,19 @@ function App() {
         setData(originalData) 
       }else{
         const newItem = originalData.filter(e=>{
-        return e.name.common.toLowerCase().includes(text)
+          const ctr = e.name.common.toLowerCase()
+          const ctrf = ctr.includes(text)
+          return ctrf
       })
-      setData(newItem)
+        const newCapital = originalData.filter(e=>{
+          if(e.capital && e.capital.length>0){
+            const cpt = e.capital[0].toLowerCase()
+            const cptf = cpt.includes(text)
+            return cptf
+        }
+        })
+        const combined = [...new Set([...newItem, ...newCapital])]
+        setData(combined)
     }}
 
   return (

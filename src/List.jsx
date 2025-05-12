@@ -10,7 +10,9 @@ function List(props){
                 <div className='list' key={index}>
                     <img src={e.flags.png}></img>
                     <h3>{e.name.common}</h3>
+                    <h5>เมืองหลวง : {e.capital}</h5>
                     <h5>ทวีป : {e.region}</h5>
+                    <h5>ประชากร : {Intl.NumberFormat().format(e.population)}</h5>
                 </div>)
             })}
         </div>
